@@ -14,7 +14,6 @@ body {
 }
 
 header {
-    /* background-color: #163a55; */
     display: flex;
     padding: 1em;
     width: 100vw;
@@ -32,42 +31,68 @@ h1 {
     color: white;
     font-style: italic;
     font-size: 2.6em;
+    letter-spacing: 0.03em;
 }
 
-nav {
-    height: 50px;
-    flex: 100%;
-    display: flex;
-    background-color: #437ba6;
-}
+/* nav {
+    /* height: 50px; */
+    /* border: 3px solid black; */
+    /* flex: 100%; */
+    /* display: flex; */
+
+/*} */
   
 nav ul {
-padding: 0;
-list-style-type: none;
-flex: 2;
-display: flex;
-color:white;
+    /* border: 3px solid black; */
+    padding: 0;
+    list-style-type: none;
+    flex: 1;
+    display: flex;
+    color:white;
+    flex-wrap: wrap;
+    margin:0;
+    background-color: #437ba6;
+
 }
 
 nav li {
-display: inline;
-text-align: center;
-flex: 1;
+    /* border: 2px dashed rgb(196, 41, 41); */
+    text-align: center;
+    flex: 5em;
+    padding:0.6em;
+ 
 }
 
 nav .current-page {
-font-weight: 900;
+    font-weight: 900;
 }
 
 nav a {
-color: white;
-text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 nav a:hover {
-background-color: #163a55;
+    background-color: #163a55;
 }
+
 
 main {
     margin: 1.5em;
+}
+
+.img1 {
+    background-image: url(Assets/cheesecake.jpeg);
+    width: 10lh;
+    height: 10lh;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+    background-image: url(Assets/garlic-cloud-rolls.jpeg);
+    width: 10lh;
+    height: 10lh;
+    background-size: cover;
+    background-position: center;
 }
