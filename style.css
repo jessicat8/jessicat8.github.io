@@ -1,0 +1,73 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    /* background-color: #163a55; */
+    display: flex;
+    padding: 1em;
+    width: 100vw;
+    height:17em;
+    background-image: url(Assets/buche-de-noel.jpg);
+    background-size: cover;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    background-color: #636669;
+    background-blend-mode: multiply;
+}
+
+h1 {
+    color: white;
+    font-style: italic;
+    font-size: 2.6em;
+}
+
+nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+    background-color: #437ba6;
+}
+  
+nav ul {
+padding: 0;
+list-style-type: none;
+flex: 2;
+display: flex;
+color:white;
+}
+
+nav li {
+display: inline;
+text-align: center;
+flex: 1;
+}
+
+nav .current-page {
+font-weight: 900;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+}
+
+nav a:hover {
+background-color: #163a55;
+}
+
+main {
+    margin: 1.5em;
+}
