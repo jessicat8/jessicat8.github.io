@@ -34,21 +34,21 @@
     </style>
 
 </head>
-    <h1>Number Guessing Game</h1>
+    <h1>Number Guessing Game Demo</h1>
 
-    <p>We have selected a number between 1 and 100. 
-        See if you can guess it in 10 turns of fewer. 
-        We will tell you if your guess is too high or too low.</p>
+    <p>This demo provides an example of how to display input fields using html. 
+        It also tracks how many times any of the buttons are clicked and displays the guess count using javascript.
+    </p>
     
     <!-- User Input -->
     <div class="form">
         <label for="guessField">Enter a guess: </label>
         <input type="number" min="1" max="100" required id="guessField" class="guessField">
-        <input type="submit" value="Submit guess" class="guessSubmit">
+        <input type="submit" value="Submit guess" class="guessSubmit styledButton">
     
-    <!-- More Button Examples
+    <!-- More Button Examples -->
         <input class=styledButton type="button" value="Button using input tag" onclick="checkGuess()">
-        <button id="anotherStyledButton">Button using button tag</button> -->
+        <button id="anotherStyledButton" onclick="checkGuess()">Button using button tag</button>
     
     </div>
 
@@ -60,36 +60,30 @@
         
         // Variables
         const guessSubmit = document.querySelector(".guessSubmit"); 
-            //what does querySelector do?
-            //what element is this line selecting?
-            //what is it doing to that eleement?
+            //what does querySelector do? searches for the first element that matches whatever is in the parentheses
+            //what element is this line selecting? an element with the class "guessSubmit"
+            //what is it doing to that eleement? Set that element to the constant guessSubmit
         let guessCount=1 
 
       
         // Event Listener 
         guessSubmit.addEventListener("click", checkGuess);
-            //what does .addEventListener do?
+            //what does .addEventListener do? tracks when you click the Submit guess button
+            // when it is clicked, it will run the function checkGuess()
         
 
         // This functions runs whenever the button is clicked
         function checkGuess(){
-            console.log("Hello"); //how to view console
-            
-            // alert("I am a placeholder") //will give a pop up alert, must view in browser to see
+            // console.log("Hello"); 
+            // alert("I am a placeholder") //will give a pop up alert, must view in browser to see            
 
-            // document.getElementById("hello").textContent = "Hello";
-            //     //what does getElementById do? 
-            //     //What element is this line selecting?
-            //     //What is it doing to that element?
+         // This shows the number of guesses (number of times user clicks submit)
+            guessCount++; // add 1 to the guessCount
+            document.getElementById("guesses").textContent = `${guessCount}`;
+                //what does getElementById do? searches document for the element with an ID that matches what's in the ()
+                //What element is this line selecting? the paragraph with ID="guesses"
+                //What is it doing to that element? putting text in the paragraph that will display the current guessCount
         }
-
-
-
-        //  // This function shows the number of guesses (number of times user clicks submit)
-        //  function checkGuess(){
-        //     guessCount++; // add 1 to the guessCount
-        //     document.getElementById("guesses").textContent = `${guessCount}`;
-        // }
 
     </script>
 
