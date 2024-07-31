@@ -17,9 +17,19 @@
             width: 200px;
         }
         
-        .lastResult{
-            color:white;
-            padding: 3px;
+        .styledButton {
+            background-color: rgb(56, 73, 109);
+            color: white;
+            border: none;
+            padding: 15px;
+            margin: 15px;
+        }
+        #anotherStyledButton {
+            background-color: rgb(207, 37, 102);
+            color: white;
+            border: none;
+            padding: 15px;
+            margin: 15px;
         }
     </style>
 
@@ -35,6 +45,11 @@
         <label for="guessField">Enter a guess: </label>
         <input type="number" min="1" max="100" required id="guessField" class="guessField">
         <input type="submit" value="Submit guess" class="guessSubmit">
+    
+    <!-- More Button Examples
+        <input class=styledButton type="button" value="Button using input tag" onclick="checkGuess()">
+        <button id="anotherStyledButton">Button using button tag</button> -->
+    
     </div>
 
     <!-- Output Text -->
@@ -55,7 +70,7 @@
         guessSubmit.addEventListener("click", checkGuess);
             //what does .addEventListener do?
         
-            
+
         // This functions runs whenever the button is clicked
         function checkGuess(){
             console.log("Hello"); //how to view console
