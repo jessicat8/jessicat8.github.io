@@ -41,23 +41,32 @@
     <p ID="hello"></p>
     <p ID="guesses"></p>
 
-    <script>
-        // This is all the Javascript
+    <script> // This is all the Javascript
         
         // Variables
-        const guessSubmit = document.querySelector(".guessSubmit");
-        let guessCount=1
+        const guessSubmit = document.querySelector(".guessSubmit"); 
+            //what does querySelector do?
+        let guessCount=1 
 
-        // Event Listener to "listen" for clicks on the Submit guess button, and calls a function when clicked
+        // Event Listener 
         guessSubmit.addEventListener("click", checkGuess);
+            //what does .addEventListener do?
 
         // This functions runs whenever the button is clicked
         function checkGuess(){
-            guessCount++; // add 1 to the guessCount
-            document.getElementById("hello").textContent = "Hello";
-            document.getElementById("guesses").textContent = `${guessCount}`;
-            console.log("Hello")
+            console.log("Hello") //how to view console
+
+            // document.getElementById("hello").textContent = "Hello";
+            //     //what does getElementById do? 
+            //     //What element is this line getting?
+            //     //What is it doing to that element?
         }
+
+        //  // This function shows the number of guesses (number of times user clicks submit)
+        //  function checkGuess(){
+        //     guessCount++; // add 1 to the guessCount
+        //     document.getElementById("guesses").textContent = `${guessCount}`;
+        // }
 
     </script>
 
